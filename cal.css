@@ -1,0 +1,43 @@
+table{
+    width: 350px;
+    margin: auto;
+    border-collapse: collapse;
+    justify-items: center;
+    margin-top: 10%;
+    box-shadow: 8px 8px 9px 5px #808a8e;
+}
+
+td {
+    background-color: #F4A261;
+    border: 1px solid white;
+    text-align: center;
+    color: #264653;
+    padding: 20px;
+    font-size: 1.2em;
+}
+td:hover{
+    background-color: #f0bf98;
+    cursor: pointer;
+}
+
+.result {
+    background-color: #264653;
+    color: #fff;;
+    border:none;
+    padding: 2rem;
+    font-size: 1.5em;
+}
+.result:hover{
+    background-color: #264653;
+    cursor: default;
+}
+.operator{
+    background-color: #E76F51;
+    color: #264653;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.operator:hover{
+    background-color: #eb4c24;
+    color: white;
+}
