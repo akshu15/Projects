@@ -1,0 +1,125 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    height: 100%;
+    background-image: url("./bg1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.game-container{
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    padding-top: 20%;
+    text-align: center;
+
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -o-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+#start, #restart{
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #090979;
+    margin: auto;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.8em;
+}
+#start:hover, #restart:hover{
+    background-color: #edecec;
+    cursor: pointer;
+}
+#restart{
+    padding: 5px;
+}
+#game-body{
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 6px #fff;
+    padding: 2rem;
+    background-color: #fff;
+}
+.do-flip {
+    -o-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+.do-flip-flip{
+    -o-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+.game-question{
+    font-size: 1.5em;
+    color: #090979;
+    padding: 10px;
+}
+#game-options{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.btn{
+    margin: 10px;
+    padding: 15px;
+    background-color: #00d4ff;
+    color: #fff;
+    border-radius: 5px;
+    border: #00d4ff;
+    font-size: 1.5em;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #23bddc;
+}
+#game-next-btn{
+    float: right;
+    /* margin: 5px; */
+    outline: none;
+    border: none;
+    background: none;
+    color: steelblue;
+    font-size: 1.2em;
+}
+#game-next-btn:hover{
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    .game-container{
+        padding-top: 0;
+        margin-top: 50%;
+    }
+    #game-body{
+        padding: 1rem;
+    }
+    .game-question{
+        font-size: 0.8em;
+        padding: 5px;
+    }
+    #game-options{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .btn{
+        margin: 5px;
+        padding: 10px;
+        font-size: 1em;
+    }
+    #game-next-btn{
+        font-size: 1em;
+    }
+}
